@@ -559,6 +559,46 @@ ul {
     color: var(--black);
 }
 
+/* GG Pic */
+.polaroid {
+    /* Dimensions & Background */
+    width: 300px;
+    background-color: var(--cream);
+    border-bottom: 3px solid var(--orange);
+
+    /* The Secret: Uneven padding creates the Polaroid frame */
+    padding: 15px 15px 20px 15px;
+
+    /* Shadow gives a 3D physical look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    /* Align text centered below the image */
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid img {
+    /* Ensures the photo fits perfectly within your frame */
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.polaroid figcaption {
+    /* Styles the handwritten or typed caption area */
+    font-family: var(--font-display);
+    font-size: 16px;
+    color: var(--black);
+    margin-top: 15px;
+}
+
+.polaroid:hover {
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
 /* Story Section */
 .story {
     background: var(--black);
