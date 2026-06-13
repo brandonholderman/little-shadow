@@ -52,3 +52,7 @@ if ('IntersectionObserver' in window) {
         revealObs.observe(el);
     });
 }
+
+console.log(
+    'Website create by Brandon Holderman. Like my work? Please reach out! Email: brandonholderman@outlook.com'
+)
