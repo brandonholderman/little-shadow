@@ -1,13 +1,18 @@
 const nav = document.querySelector('.nav-burger');
 const navLinks = document.querySelector('.nav-links');
 
+/**
+ * Burger Menu for Mobile
+ */
 if (nav && navLinks) {
     nav.addEventListener('click', () => {
         const isOpen = navLinks.classList.toggle('open');
         nav.setAttribute('aria-expanded', isOpen);
     });
 
-
+    /**
+     * Close Menu when Link Selected
+     */
     navLinks.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('open');
@@ -15,7 +20,9 @@ if (nav && navLinks) {
         });
     });
 
-
+    /**
+     * Close Menu on Outside Click
+     */
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.nav')) {
             navLinks.classList.remove('open');
@@ -24,7 +31,9 @@ if (nav && navLinks) {
     });
 }
 
-
+/**
+ * Scroll Reveal for Sauce Cards
+ */
 const cards = document.querySelectorAll('.flavor-card, .attr-list li, .story-text p');
 
 if ('IntersectionObserver' in window) {

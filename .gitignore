@@ -156,3 +156,8 @@ todo.*
 # Notes
 *.md
 notes.*
+
+
+# Assets
+src\assets
+*.pdf

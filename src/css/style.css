@@ -19,10 +19,8 @@
     --cream: #F5F0E0;
     --parchment: #E8DFC8;
     --white: #FDFCF8;
-    --green: #3D6B47;
-    /* Hot Honey Jalapeño label color */
-    --salmon: #E8836A;
-    /* Maple Black Pepper label color */
+    --green: #3D6B47; /* Hot Honey Jalapeño label color */
+    --salmon: #E8836A; /* Maple Black Pepper label color */
 
     --font-display: 'Bebas Neue', 'Arial Narrow', sans-serif;
     --font-body: 'Inter', system-ui, sans-serif;
@@ -357,7 +355,7 @@ ul {
 }
 @keyframes float {
   0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(-14px); }
+  50% { transform: translateY(-14px); }
 }
 
 .hero-tag {
@@ -387,16 +385,41 @@ ul {
 }
 
 @keyframes bounce {
-
-    0%,
-    100% {
-        transform: translateX(-50%) translateY(0);
-    }
-
-    50% {
-        transform: translateX(-50%) translateY(6px);
-    }
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(6px); }
 }
+
+/* Scrolling Marquee */
+.uses-strip {
+    background: var(--orange);
+    color: var(--white);
+    padding: 0.75rem 0;
+    overflow: hidden;
+    border-bottom: 3px solid var(--black);
+}
+
+.uses-inner {
+    display: flex;
+    gap: 1.25rem;
+    white-space: nowrap;
+    animation: marquee 18s linear infinite;
+    width: max-content;
+}
+
+.uses-inner span {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.uses-inner .dot { color: var(--black); opacity: 0.5; }
+
+@keyframes marquee {
+  from { transform: translateX(200%); }
+  to   { transform: translateX(-100%); }
+}
+
 
 /* Flavors */
 .flavors {
@@ -426,7 +449,7 @@ ul {
     box-shadow: 6px 6px 0 var(--black);
 }
 
-/* Color band at top of each card — like a label */
+/* Label band at top of card  */
 .flavor-label-band {
     padding: 0.5rem 1rem;
     font-family: var(--font-display);
@@ -501,7 +524,7 @@ ul {
     color: var(--black);
 }
 
-/* Flavors Shelf */
+/* Flavor Info Shelf */
 .flavors-shelf-info {
     background: var(--parchment);
     border: 2.5px solid var(--black);
@@ -614,7 +637,7 @@ ul {
     transform: rotate(1deg);
 }
 
-
+/* Attributes */
 .attributes {
     background: var(--orange);
     border-bottom: 3px solid var(--black);
@@ -651,14 +674,15 @@ ul {
     opacity: 0.85;
 }
 
-.stockists {
+/* Shop */
+.shop {
     background: var(--cream);
     padding: clamp(4rem, 8vw, 7rem) 0;
     text-align: center;
     border-bottom: 3px solid var(--black);
 }
 
-.stockists-sub {
+.shop-sub {
     font-size: 1.05rem;
     max-width: 48ch;
     margin-inline: auto;
@@ -666,7 +690,7 @@ ul {
     color: var(--black);
 }
 
-.stockists-actions {
+.shop-actions {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -674,6 +698,8 @@ ul {
     margin-bottom: 2.5rem;
 }
 
+
+/* Contact Section */
 .contact-block {
     font-size: 0.9rem;
     color: var(--black);
@@ -686,6 +712,8 @@ ul {
     text-underline-offset: 3px;
 }
 
+
+/* Footer */
 .site-footer {
     background: var(--black);
     color: var(--parchment);
