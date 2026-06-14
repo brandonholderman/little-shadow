@@ -564,7 +564,7 @@ ul {
     /* Dimensions & Background */
     width: 300px;
     background-color: var(--cream);
-    border-bottom: 3px solid var(--orange);
+    border-bottom: 4px solid var(--orange);
 
     /* The Secret: Uneven padding creates the Polaroid frame */
     padding: 15px 15px 20px 15px;
@@ -588,14 +588,14 @@ ul {
 
 .polaroid figcaption {
     /* Styles the handwritten or typed caption area */
-    font-family: var(--font-display);
+    font-family: var(--font-body);
     font-size: 16px;
     color: var(--black);
     margin-top: 15px;
 }
 
 .polaroid:hover {
-    transform: rotate(0deg) scale(1.05);
+    transform: rotate(0.5deg) scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 

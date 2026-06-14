@@ -1,0 +1,2 @@
+# Redirect www to apex (configure in Cloudflare DNS too)
+https://www.littleshadow.shop/* https://littleshadow.shop/:splat 301

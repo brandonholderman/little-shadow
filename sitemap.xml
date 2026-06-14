@@ -1,0 +1,11 @@
+<!-- Update later for SEO if you ever have something like a news article published, 
+adding the link and info here will connect to your website in search results -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://littleshadow.shop/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
