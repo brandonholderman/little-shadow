@@ -141,3 +141,23 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+
+
+# TODO
+TODO
+todo
+*.todo
+*.TODO
+TODO.*
+todo.*
+
+
+# Notes
+*.md
+notes.*
+
+
+# Assets
+src/assets/*
+*.pdf
