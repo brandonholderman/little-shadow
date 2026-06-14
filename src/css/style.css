@@ -752,6 +752,18 @@ ul {
     text-underline-offset: 3px;
 }
 
+.contact-item {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.contact-icon {
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-top: 0.5rem;
+}
+
 
 /* Footer */
 .site-footer {
