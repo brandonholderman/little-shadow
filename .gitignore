@@ -159,5 +159,5 @@ notes.*
 
 
 # Assets
-src\assets
+src/assets/*
 *.pdf
