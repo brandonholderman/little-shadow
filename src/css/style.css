@@ -402,7 +402,7 @@ ul {
     display: flex;
     gap: 1.25rem;
     white-space: nowrap;
-    animation: marquee 18s linear infinite;
+    animation: marquee 70s linear infinite;
     width: max-content;
 }
 
@@ -562,7 +562,7 @@ ul {
 /* GG Pic */
 .polaroid {
     /* Dimensions & Background */
-    width: 300px;
+    width: 350px;
     background-color: var(--cream);
     border-bottom: 4px solid var(--orange);
 
@@ -595,7 +595,7 @@ ul {
 }
 
 .polaroid:hover {
-    transform: rotate(0.5deg) scale(1.1);
+    transform: rotate(0.5deg) scale(1.2);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -663,7 +663,7 @@ ul {
 }
 
 .story-ghost {
-    width: clamp(160px, 22vw, 280px);
+    width: clamp(160px, 22vw, 180px);
     filter: invert(1) brightness(1.5);
     opacity: 0.9;
 }
@@ -850,6 +850,10 @@ ul {
     .story-art {
         order: -1;
     }
+
+    .nav-logo-text {
+        font-size: 1.7rem;
+    }
 }
 
 @media (max-width: 700px) {
@@ -876,6 +880,24 @@ ul {
 
     .ghost-img {
         width: 160px;
+    }
+
+    .nav-logo-text {
+        font-size: 1.5rem;
+        letter-spacing: 0.03em;
+    }
+
+    .nav-logo-star {
+        font-size: 1.5rem;
+    }
+
+    .footer-logo {
+        font-size: 1.5rem;
+        letter-spacing: 0.03em;
+    }
+
+    .footer-star {
+        font-size: 1.5rem;
     }
 
     .nav-links {
@@ -916,6 +938,25 @@ ul {
     .hero-headline {
         font-size: clamp(3.5rem, 18vw, 5rem);
     }
+
+    .nav-logo-text {
+        font-size: 1.3rem;
+        letter-spacing: 0.03em;
+    }
+
+    .nav-logo-star {
+        font-size: 1.2rem;
+    }
+
+    .footer-logo {
+        font-size: 1.3rem;
+        letter-spacing: 0.03em;
+    }
+
+    .footer-star {
+        font-size: 1.2rem;
+    }
+
 }
 
 /* Reduced Motion */
